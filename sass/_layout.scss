@@ -24,10 +24,19 @@
     background-color: var(--color-grey-dark-1);
     // grow shrink basis
     flex: 0 0 18%;
+
+    // side nav disply in sidebar, legal text gets pushed to bottom
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .hotel-view {
     background-color: white;
     // fill the rest of the space
     flex: 1;
+
+    // JUST FOR TESTING
+    background-color: orangered;
+    height: 80rem;
 }
