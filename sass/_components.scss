@@ -12,6 +12,12 @@
   align-items: center;
   justify-content: center;
 
+  @media only screen and (max-width: $bp-smallest) {
+    order: 1; // moves it to the end
+    flex: 0 0 100%; // don't shrink, don't grow, and be 100% of the container
+    background-color: var(--color-grey-light-2);
+  }
+
   &__input {
     // inputs don't inherit font styles by default
     font-family: inherit;
